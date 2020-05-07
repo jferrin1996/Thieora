@@ -26,7 +26,12 @@
   </header>
   <div class="container1">
     <div class="container2">      
-    <h1>Jake Ferrin</h1>
+    <h1 id="userName">
+      <script>
+        var myName = "Jake Ferrin";
+        document.write(myName);
+      </script>
+    </h1>
           <p>
               <img class="img" src="Images/Person.png" alt="logo i">
           </p>
@@ -35,13 +40,25 @@
                 <li> </li>
                 <li> </li>
                 <li> </li>
+                <li> </li>
                 <li id="docRef"> </li>
                 <li> </li>
-                <li>Savings: </li>
-                <li>Investments: </li>
-                <li>Debt: </li>
+                <li>Savings:
+                  <script>
+                    var savings = "$300";
+                    document.write(savings);
+                  </script>
+                </li>
+                <li>Investments: $200</li>
+                <li>Debt: $1000</li>
               </ul>
           </p>
+      </div>
+      <div>
+        <form>
+          <input type="text" name="Stock">
+          <input type="submit" value="Invest">
+        </form>
       </div>
     </div>
 
